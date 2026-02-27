@@ -2,27 +2,23 @@ import { useState, useEffect } from 'react'
 import Card from '../components/Card'
 import dataPengumuman from '../data/pengumuman.json'
 
+const formatTanggal = (tanggal) => {
+  return new Date(tanggal).toLocaleDateString('id-ID', {
+    day: 'numeric', month: 'long', year: 'numeric',
+  })
+}
+
 const Pengumuman = () => {
   const [pengumuman, setPengumuman] = useState([])
   const [loading, setLoading] = useState(true)
 
-  // Simulasi fetch API pakai useEffect
   useEffect(() => {
-    // Nanti di sini diganti: axios.get('/api/pengumuman')
+    // Nanti diganti: axios.get('/api/pengumuman')
     setTimeout(() => {
       setPengumuman(dataPengumuman)
       setLoading(false)
-    }, 500) // simulasi delay API 0.5 detik
+    }, 500)
   }, [])
-
-  // Format tanggal
-  const formatTanggal = (tanggal) => {
-    return new Date(tanggal).toLocaleDateString('id-ID', {
-      day: 'numeric',
-      month: 'long',
-      year: 'numeric',
-    })
-  }
 
   return (
     <div className="max-w-6xl mx-auto px-6 py-12">
@@ -34,14 +30,14 @@ const Pengumuman = () => {
         <div className="w-16 h-1 bg-blue-600 mt-3 rounded"></div>
       </div>
 
-      {/* Loading State */}
+      {/* Loading */}
       {loading && (
-        <div className="flex justify-center items-center py-20">
+        <div className="flex justify-center py-20">
           <div className="animate-spin rounded-full h-10 w-10 border-4 border-blue-600 border-t-transparent"></div>
         </div>
       )}
 
-      {/* List Pengumuman */}
+      {/* List */}
       {!loading && (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {pengumuman.map((item) => (
