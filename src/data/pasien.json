@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "nik": "3374010101900001",
+    "no_rekam_medik": "RM0001",
+    "nama": "Budi Santoso",
+    "alamat": "Jl. Merdeka No. 10, Semarang",
+    "jenis_kelamin": "L",
+    "no_telepon": "081234567890",
+    "tanggal_lahir": "1990-01-01",
+    "tipe_pasien": "bpjs",
+    "no_bpjs": "0001234567890"
+  },
+  {
+    "id": 2,
+    "nik": "3374010202850002",
+    "no_rekam_medik": "RM0002",
+    "nama": "Sari Dewi",
+    "alamat": "Jl. Pemuda No. 5, Semarang",
+    "jenis_kelamin": "P",
+    "no_telepon": "082345678901",
+    "tanggal_lahir": "1985-02-02",
+    "tipe_pasien": "umum",
+    "no_bpjs": null
+  }
+]
