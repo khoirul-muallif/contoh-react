@@ -47,5 +47,5 @@ const Card = ({ to, badge, badgeColor = 'blue', title, date, description, pentin
     </Link>
   )
 }
-
+ 
 export default Card
