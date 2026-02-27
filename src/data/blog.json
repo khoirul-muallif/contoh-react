@@ -1,0 +1,46 @@
+[
+  {
+    "id": 53,
+    "category": "Kesehatan",
+    "title": "Kesehatan Lutut: Cara Menjaga dan Mencegah Cedera",
+    "slug": "kesehatan-lutut-cara-menjaga-dan-mencegah-cedera",
+    "image": "https://placehold.co/800x400?text=Kesehatan+Lutut",
+    "excerpt": "Lutut adalah salah satu sendi terpenting dalam tubuh. Sendi ini berperan dalam pergerakan sehari-hari, seperti berjalan, berlari, dan melompat. Namun, lutut juga rentan terhadap cedera dan masalah kesehatan.",
+    "body": "<div>Lutut adalah salah satu sendi terpenting dalam tubuh. Sendi ini berperan dalam pergerakan sehari-hari, seperti berjalan, berlari, dan melompat. Namun, lutut juga rentan terhadap cedera dan masalah kesehatan.<br><br><strong>Penyebab Umum Masalah Lutut</strong><br><br></div><ul><li><strong>Cedera</strong> – Cedera lutut bisa terjadi akibat kecelakaan, jatuh, atau olahraga yang melibatkan gerakan tiba-tiba.</li><li><strong>Penuaan</strong> – Seiring bertambahnya usia, sendi lutut mengalami keausan yang bisa menyebabkan nyeri dan peradangan.</li><li><strong>Berat Badan Berlebih</strong> – Berat badan yang berlebih memberikan tekanan ekstra pada lutut.</li><li><strong>Kurang Aktivitas Fisik</strong> – Kurangnya aktivitas fisik bisa melemahkan otot-otot di sekitar lutut.</li></ul><div><strong>Cara Menjaga Kesehatan Lutut</strong><br><br>1. <strong>Menjaga Berat Badan Ideal</strong><br><br>Menurunkan berat badan dapat mengurangi tekanan pada lutut. Diet sehat dan olahraga teratur dapat membantu.<br><br>2. <strong>Berolahraga Secara Teratur</strong><br><br>Olahraga seperti berjalan, berenang, dan bersepeda dapat memperkuat otot-otot di sekitar lutut.<br><br>3. <strong>Mengonsumsi Makanan Sehat</strong><br><br>Makanan kaya kalsium dan vitamin D seperti susu, keju, dan ikan dapat membantu menjaga kesehatan tulang dan sendi.</div>",
+    "author": "dr. Admin",
+    "published_at": "2025-08-08"
+  },
+  {
+    "id": 54,
+    "category": "Tips Sehat",
+    "title": "10 Cara Menjaga Imunitas Tubuh di Musim Hujan",
+    "slug": "10-cara-menjaga-imunitas-tubuh-di-musim-hujan",
+    "image": "https://placehold.co/800x400?text=Imunitas+Tubuh",
+    "excerpt": "Musim hujan seringkali membawa berbagai penyakit seperti flu, batuk, dan demam. Berikut 10 cara mudah menjaga daya tahan tubuh agar tetap prima.",
+    "body": "<p>Musim hujan seringkali membawa berbagai penyakit. Berikut cara menjaga imunitas tubuh:</p><ul><li><strong>Konsumsi vitamin C</strong> – Buah jeruk, jambu, dan kiwi kaya vitamin C yang membantu meningkatkan imunitas.</li><li><strong>Istirahat cukup</strong> – Tidur 7-8 jam per malam membantu tubuh memulihkan diri.</li><li><strong>Olahraga rutin</strong> – Minimal 30 menit per hari untuk menjaga stamina.</li><li><strong>Minum air putih</strong> – Minimal 8 gelas per hari untuk menjaga hidrasi tubuh.</li><li><strong>Kelola stres</strong> – Stres berlebih dapat menurunkan daya tahan tubuh.</li></ul>",
+    "author": "dr. Sari",
+    "published_at": "2025-08-10"
+  },
+  {
+    "id": 55,
+    "category": "Informasi",
+    "title": "Mengenal Layanan Hemodialisa di RS Sehat Sejahtera",
+    "slug": "mengenal-layanan-hemodialisa-di-rs-sehat-sejahtera",
+    "image": "https://placehold.co/800x400?text=Hemodialisa",
+    "excerpt": "Layanan hemodialisa hadir untuk membantu pasien dengan gangguan fungsi ginjal. Kenali lebih jauh tentang prosedur, manfaat, dan persiapannya.",
+    "body": "<p>Hemodialisa adalah prosedur medis untuk membersihkan darah dari racun dan kelebihan cairan ketika ginjal tidak dapat berfungsi dengan baik.</p><p><strong>Siapa yang Membutuhkan Hemodialisa?</strong></p><p>Pasien dengan gagal ginjal kronis atau akut yang ginjalnya tidak mampu menyaring darah dengan baik memerlukan hemodialisa secara rutin.</p><p><strong>Prosedur Hemodialisa</strong></p><p>Proses ini dilakukan menggunakan mesin dialisis yang berfungsi sebagai ginjal buatan. Darah pasien dialirkan melalui mesin, dibersihkan, lalu dikembalikan ke tubuh. Satu sesi berlangsung sekitar 3-4 jam.</p>",
+    "author": "dr. Budi Sp.PD",
+    "published_at": "2025-08-12"
+  },
+  {
+    "id": 56,
+    "category": "Tips Sehat",
+    "title": "Pola Makan Sehat untuk Penderita Diabetes",
+    "slug": "pola-makan-sehat-untuk-penderita-diabetes",
+    "image": "https://placehold.co/800x400?text=Pola+Makan+Diabetes",
+    "excerpt": "Mengatur pola makan adalah kunci utama dalam mengelola diabetes. Simak panduan lengkap pola makan sehat yang direkomendasikan dokter.",
+    "body": "<p>Diabetes adalah kondisi di mana kadar gula darah terlalu tinggi. Pola makan yang tepat sangat penting untuk mengontrolnya.</p><p><strong>Makanan yang Dianjurkan</strong></p><ul><li>Sayuran hijau seperti bayam, brokoli, dan kangkung</li><li>Buah-buahan rendah gula seperti apel, pir, dan beri</li><li>Protein tanpa lemak seperti ayam tanpa kulit dan ikan</li><li>Karbohidrat kompleks seperti nasi merah dan gandum</li></ul><p><strong>Makanan yang Dihindari</strong></p><ul><li>Minuman manis dan soda</li><li>Makanan tinggi lemak jenuh</li><li>Makanan olahan dan fast food</li></ul>",
+    "author": "dr. Gizi RS",
+    "published_at": "2025-08-15"
+  }
+]
