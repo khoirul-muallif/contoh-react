@@ -11,6 +11,8 @@ import FAQ from './pages/FAQ'
 import Login from './pages/Login'
 import Register from './pages/Register'
 import NotFound from './pages/NotFound'
+import DokterDetail from './pages/DokterDetail'
+
 
 function App() {
   return (
@@ -25,6 +27,7 @@ function App() {
         <Route path="/pengumuman" element={<Pengumuman />} />
         <Route path="/pengumuman/:id" element={<PengumumanDetail />} />
         <Route path="/faq" element={<FAQ />} />
+        <Route path="/dokter/:id" element={<DokterDetail />} />
       </Route>
 
       {/* Halaman tanpa Navbar & Footer */}

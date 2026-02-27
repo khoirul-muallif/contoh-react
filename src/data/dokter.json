@@ -1,0 +1,139 @@
+[
+  {
+    "id": 1,
+    "kd_dokter": "101",
+    "nm_dokter": "dr. Budi Santoso, Sp.JP",
+    "jk": "L",
+    "image": "https://placehold.co/300x300?text=dr.Budi",
+    "status": 1,
+    "poliklinik": {
+      "id": 1,
+      "kd_poli": "JAN",
+      "nm_poli": "Klinik Jantung"
+    },
+    "spesialis": {
+      "id": 1,
+      "nm_sps": "Spesialis Jantung",
+      "slug": "spesialis-jantung"
+    },
+    "jadwal": [
+      { "id": 1, "hari": "Senin", "jam_mulai": "08:00", "jam_selesai": "14:00", "keterangan": "Praktek" },
+      { "id": 2, "hari": "Rabu", "jam_mulai": "08:00", "jam_selesai": "14:00", "keterangan": "Praktek" },
+      { "id": 3, "hari": "Jumat", "jam_mulai": "08:00", "jam_selesai": "12:00", "keterangan": "Praktek" }
+    ]
+  },
+  {
+    "id": 2,
+    "kd_dokter": "102",
+    "nm_dokter": "dr. Sri Wahyuni, Sp.PD",
+    "jk": "P",
+    "image": "https://placehold.co/300x300?text=dr.Sri",
+    "status": 1,
+    "poliklinik": {
+      "id": 2,
+      "kd_poli": "PDL",
+      "nm_poli": "Klinik Penyakit Dalam"
+    },
+    "spesialis": {
+      "id": 2,
+      "nm_sps": "Spesialis Penyakit Dalam",
+      "slug": "spesialis-penyakit-dalam"
+    },
+    "jadwal": [
+      { "id": 4, "hari": "Selasa", "jam_mulai": "09:00", "jam_selesai": "15:00", "keterangan": "Praktek" },
+      { "id": 5, "hari": "Kamis", "jam_mulai": "09:00", "jam_selesai": "15:00", "keterangan": "Praktek" },
+      { "id": 6, "hari": "Jumat", "jam_mulai": "08:00", "jam_selesai": "14:00", "keterangan": "Praktek" }
+    ]
+  },
+  {
+    "id": 3,
+    "kd_dokter": "103",
+    "nm_dokter": "dr. Ahmad Fauzi, Sp.A",
+    "jk": "L",
+    "image": "https://placehold.co/300x300?text=dr.Ahmad",
+    "status": 1,
+    "poliklinik": {
+      "id": 4,
+      "kd_poli": "ANA",
+      "nm_poli": "Klinik Anak"
+    },
+    "spesialis": {
+      "id": 3,
+      "nm_sps": "Spesialis Anak",
+      "slug": "spesialis-anak"
+    },
+    "jadwal": [
+      { "id": 7, "hari": "Senin", "jam_mulai": "10:00", "jam_selesai": "14:00", "keterangan": "Praktek" },
+      { "id": 8, "hari": "Rabu", "jam_mulai": "10:00", "jam_selesai": "14:00", "keterangan": "Praktek" },
+      { "id": 9, "hari": "Sabtu", "jam_mulai": "08:00", "jam_selesai": "12:00", "keterangan": "Praktek" }
+    ]
+  },
+  {
+    "id": 4,
+    "kd_dokter": "104",
+    "nm_dokter": "dr. Dewi Kusuma, Sp.OG",
+    "jk": "P",
+    "image": "https://placehold.co/300x300?text=dr.Dewi",
+    "status": 1,
+    "poliklinik": {
+      "id": 5,
+      "kd_poli": "OBG",
+      "nm_poli": "Klinik Kandungan"
+    },
+    "spesialis": {
+      "id": 4,
+      "nm_sps": "Spesialis Obstetri & Ginekologi",
+      "slug": "spesialis-obgyn"
+    },
+    "jadwal": [
+      { "id": 10, "hari": "Senin", "jam_mulai": "08:00", "jam_selesai": "12:00", "keterangan": "Praktek" },
+      { "id": 11, "hari": "Kamis", "jam_mulai": "13:00", "jam_selesai": "17:00", "keterangan": "Praktek" }
+    ]
+  },
+  {
+    "id": 5,
+    "kd_dokter": "105",
+    "nm_dokter": "dr. Reza Pratama, Sp.B",
+    "jk": "L",
+    "image": "https://placehold.co/300x300?text=dr.Reza",
+    "status": 1,
+    "poliklinik": {
+      "id": 6,
+      "kd_poli": "BDH",
+      "nm_poli": "Klinik Bedah"
+    },
+    "spesialis": {
+      "id": 5,
+      "nm_sps": "Spesialis Bedah",
+      "slug": "spesialis-bedah"
+    },
+    "jadwal": [
+      { "id": 12, "hari": "Selasa", "jam_mulai": "08:00", "jam_selesai": "13:00", "keterangan": "Praktek" },
+      { "id": 13, "hari": "Jumat", "jam_mulai": "13:00", "jam_selesai": "17:00", "keterangan": "Praktek" },
+      { "id": 14, "hari": "Sabtu", "jam_mulai": "08:00", "jam_selesai": "11:00", "keterangan": "Praktek" }
+    ]
+  },
+  {
+    "id": 6,
+    "kd_dokter": "106",
+    "nm_dokter": "dr. Linda Sari, Sp.M",
+    "jk": "P",
+    "image": "https://placehold.co/300x300?text=dr.Linda",
+    "status": 1,
+    "poliklinik": {
+      "id": 7,
+      "kd_poli": "MAT",
+      "nm_poli": "Klinik Mata"
+    },
+    "spesialis": {
+      "id": 6,
+      "nm_sps": "Spesialis Mata",
+      "slug": "spesialis-mata"
+    },
+    "jadwal": [
+      { "id": 15, "hari": "Senin", "jam_mulai": "09:00", "jam_selesai": "13:00", "keterangan": "Praktek" },
+      { "id": 16, "hari": "Rabu", "jam_mulai": "13:00", "jam_selesai": "17:00", "keterangan": "Praktek" },
+      { "id": 17, "hari": "Sabtu", "jam_mulai": "09:00", "jam_selesai": "12:00", "keterangan": "Praktek" }
+    ]
+  }
+]
