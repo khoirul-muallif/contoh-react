@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "slug": "jadwal-libur-lebaran-2025",
+    "judul": "Jadwal Libur Lebaran 2025",
+    "kategori": "Operasional",
+    "tanggal": "2025-03-20",
+    "ringkasan": "Informasi jadwal operasional rumah sakit selama libur Lebaran 2025.",
+    "isi": "Dalam rangka Hari Raya Idul Fitri 1446 H, RS Sehat Sejahtera akan menyesuaikan jadwal operasional. Poli Umum dan Poli Spesialis akan libur pada tanggal 31 Maret - 4 April 2025. Namun layanan IGD tetap buka 24 jam. Pendaftaran online tetap dapat dilakukan melalui website ini. Kami mohon maaf atas ketidaknyamanan yang ditimbulkan.",
+    "penting": true
+  },
+  {
+    "id": 2,
+    "slug": "sistem-antrian-online-baru",
+    "judul": "Sistem Antrian Online Baru",
+    "kategori": "Layanan",
+    "tanggal": "2025-03-15",
+    "ringkasan": "RS Sehat Sejahtera meluncurkan sistem antrian online yang lebih mudah dan cepat.",
+    "isi": "Kami dengan bangga memperkenalkan sistem antrian online terbaru. Pasien kini dapat mendaftar antrian dari rumah melalui website atau aplikasi kami. Fitur ini tersedia untuk semua poli dan dokter spesialis. Dengan sistem baru ini, pasien tidak perlu datang terlalu awal hanya untuk mengambil nomor antrian.",
+    "penting": true
+  },
+  {
+    "id": 3,
+    "slug": "pembukaan-poli-gizi",
+    "judul": "Pembukaan Poli Gizi Klinik",
+    "kategori": "Layanan Baru",
+    "tanggal": "2025-03-10",
+    "ringkasan": "RS Sehat Sejahtera membuka layanan Poli Gizi Klinik untuk konsultasi nutrisi.",
+    "isi": "Kami membuka layanan baru yaitu Poli Gizi Klinik yang akan melayani konsultasi nutrisi dan diet untuk pasien dewasa maupun anak. Layanan ini ditangani oleh dokter spesialis gizi klinik berpengalaman. Jadwal pelayanan setiap Senin, Rabu, dan Jumat pukul 09.00 - 13.00 WIB.",
+    "penting": false
+  },
+  {
+    "id": 4,
+    "slug": "maintenance-lift-gedung-b",
+    "judul": "Maintenance Lift Gedung B",
+    "kategori": "Fasilitas",
+    "tanggal": "2025-03-05",
+    "ringkasan": "Pemberitahuan maintenance lift Gedung B selama 2 hari.",
+    "isi": "Kami memberitahukan bahwa lift Gedung B akan dilakukan maintenance rutin pada tanggal 8-9 Maret 2025. Selama maintenance berlangsung, pasien dan pengunjung diharapkan menggunakan tangga atau lift Gedung A. Kami mohon maaf atas ketidaknyamanan ini.",
+    "penting": false
+  }
+]
