@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "kategori": "Pendaftaran",
+    "pertanyaan": "Bagaimana cara mendaftar sebagai pasien baru?",
+    "jawaban": "Anda dapat mendaftar melalui website ini dengan mengklik menu Pendaftaran Online, mengisi formulir dengan data diri yang lengkap, lalu memilih dokter dan jadwal yang diinginkan. Setelah mendaftar, Anda akan mendapatkan nomor antrian dan konfirmasi melalui email."
+  },
+  {
+    "id": 2,
+    "kategori": "Pendaftaran",
+    "pertanyaan": "Apakah bisa mendaftar untuk orang lain?",
+    "jawaban": "Ya, Anda bisa mendaftarkan anggota keluarga atau orang lain. Pastikan data yang diisi adalah data pasien yang akan berobat, bukan data pendaftar."
+  },
+  {
+    "id": 3,
+    "kategori": "Layanan",
+    "pertanyaan": "Apa saja poli spesialis yang tersedia?",
+    "jawaban": "RS Sehat Sejahtera memiliki berbagai poli spesialis antara lain: Penyakit Dalam, Bedah, Kandungan, Anak, THT, Saraf, Mata, Kesehatan Jiwa, Gigi, Gizi, dan Kecantikan. Jadwal dokter dapat dilihat di menu Dokter & Jadwal."
+  },
+  {
+    "id": 4,
+    "kategori": "Layanan",
+    "pertanyaan": "Apakah IGD buka 24 jam?",
+    "jawaban": "Ya, layanan IGD (Instalasi Gawat Darurat) kami buka 24 jam sehari, 7 hari seminggu termasuk hari libur nasional. Tim medis siap menangani kondisi darurat kapan saja."
+  },
+  {
+    "id": 5,
+    "kategori": "Pembayaran",
+    "pertanyaan": "Metode pembayaran apa saja yang diterima?",
+    "jawaban": "Kami menerima pembayaran tunai, kartu debit/kredit, transfer bank, dan berbagai aplikasi dompet digital seperti GoPay, OVO, dan Dana. Kami juga menerima BPJS Kesehatan untuk layanan yang sesuai ketentuan."
+  },
+  {
+    "id": 6,
+    "kategori": "Pembayaran",
+    "pertanyaan": "Apakah menerima BPJS Kesehatan?",
+    "jawaban": "Ya, kami menerima pasien BPJS Kesehatan. Pastikan membawa kartu BPJS yang masih aktif, surat rujukan dari Faskes tingkat pertama (jika diperlukan), dan kartu identitas diri."
+  },
+  {
+    "id": 7,
+    "kategori": "Fasilitas",
+    "pertanyaan": "Apakah tersedia parkir di rumah sakit?",
+    "jawaban": "Ya, tersedia area parkir yang luas untuk kendaraan roda dua dan roda empat. Parkir tersedia di area depan dan belakang gedung. Untuk kenyamanan, kami sarankan datang lebih awal terutama di jam sibuk."
+  },
+  {
+    "id": 8,
+    "kategori": "Fasilitas",
+    "pertanyaan": "Apakah ada fasilitas mushola dan kantin?",
+    "jawaban": "Ya, kami menyediakan mushola di lantai 1 dan lantai 3, serta kantin yang buka setiap hari pukul 07.00 - 20.00 WIB. Tersedia juga vending machine di beberapa sudut gedung untuk kebutuhan mendesak."
+  }
+]
