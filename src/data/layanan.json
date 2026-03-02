@@ -1,0 +1,8 @@
+[
+  { "id": 1, "icon": "FaAmbulance", "nama": "IGD 24 Jam", "deskripsi": "Layanan gawat darurat siap 24 jam dengan tim medis berpengalaman." },
+  { "id": 2, "icon": "FaUserMd", "nama": "Poli Spesialis", "deskripsi": "Tersedia berbagai poli spesialis dengan dokter berpengalaman." },
+  { "id": 3, "icon": "FaXRay", "nama": "Radiologi", "deskripsi": "X-ray, USG 2D/4D dan CT-Scan dengan teknologi terkini." },
+  { "id": 4, "icon": "FaFlask", "nama": "Laboratorium", "deskripsi": "Pemeriksaan darah, urin, dan analisis klinis lengkap." },
+  { "id": 5, "icon": "FaBaby", "nama": "NICU / PICU", "deskripsi": "Perawatan intensif untuk bayi dan anak yang membutuhkan perhatian khusus." },
+  { "id": 6, "icon": "FaHeartbeat", "nama": "Hemodialisa", "deskripsi": "Layanan cuci darah dengan mesin canggih untuk pasien ginjal." }
+]
