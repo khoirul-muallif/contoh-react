@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import usePendaftaran from '../../context/usePendaftaran'
 import InputField from '../../components/InputField'
 import Button from '../../components/Button'
-import dataPasienTerdaftar from '../../data/pasien.json'
+import { cariPasien, simpanPasien } from '../../services/api'
 
     
 
@@ -30,47 +30,49 @@ const PilihPasien = () => {
   }
 
   // Submit pasien baru
-  const handleSubmitBaru = (e) => {
-    e.preventDefault()
+  const handleSubmitBaru = async (e) => {
+  e.preventDefault()
+  if (formBaru.nik.length !== 16 || !/^[0-9]+$/.test(formBaru.nik)) {
+    alert('NIK harus 16 digit angka!')
+    return
+  }
+  if (formBaru.tipe_pasien === 'bpjs' && !formBaru.no_bpjs) {
+    alert('No BPJS wajib diisi untuk pasien BPJS!')
+    return
+  }
+  // Simpan ke API
+  const res = await simpanPasien(formBaru)
+  setDataPasien(res.data)
+  navigate('/pendaftaran/form')
+}
 
-    // Validasi NIK
-    if (formBaru.nik.length !== 16 || !/^[0-9]+$/.test(formBaru.nik)) {
-      alert('NIK harus 16 digit angka!')
-      return
-    }
+// Cari pasien lama
+const handleCariLama = async (e) => {
+  e.preventDefault()
+  setErrorCari('')
 
-    // Validasi no_bpjs kalau tipe bpjs
-    if (formBaru.tipe_pasien === 'bpjs' && !formBaru.no_bpjs) {
-      alert('No BPJS wajib diisi untuk pasien BPJS!')
-      return
-    }
-
-    // Simulasi simpan — nanti ganti axios.post('/api/pasien', formBaru)
-    const pasienBaru = { ...formBaru, id: Date.now() }
-    setDataPasien(pasienBaru)
-    navigate('/pendaftaran/form')
+  if (nikCari.length !== 16) {
+    setErrorCari('NIK harus 16 digit!')
+    return
   }
 
-  // Submit cari pasien lama
-  const handleCariLama = (e) => {
-    e.preventDefault()
-    setErrorCari('')
+  try {
+    // ← tambah log ini
+    //console.log('Mencari NIK:', nikCari)
+    const found = await cariPasien(nikCari)
+    //console.log('Hasil:', found) // ← lihat hasilnya di console
 
-    if (nikCari.length !== 16) {
-      setErrorCari('NIK harus 16 digit!')
-      return
-    }
-
-    // Simulasi cari — nanti ganti axios.post('/api/pasien/cari', { nik })
-    const found = dataPasienTerdaftar.find(p => p.nik === nikCari)
     if (!found) {
-      setErrorCari('Pasien dengan NIK tersebut tidak ditemukan. Silakan daftar sebagai pasien baru.')
+      setErrorCari('Pasien tidak ditemukan. Silakan daftar sebagai pasien baru.')
       return
     }
-
     setDataPasien(found)
     navigate('/pendaftaran/form')
+  } catch (err) {
+    console.log('Error:', err) // ← lihat error
+    setErrorCari('Gagal menghubungi server. Pastikan API berjalan.')
   }
+}
 
   return (
     <div className="max-w-2xl mx-auto px-6 py-12">

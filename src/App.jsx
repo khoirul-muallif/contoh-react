@@ -14,6 +14,7 @@ import DokterDetail from './pages/DokterDetail'
 import PilihPasien from './pages/pendaftaran/PilihPasien'
 import FormPendaftaran from './pages/pendaftaran/FormPendaftaran'
 import Konfirmasi from './pages/pendaftaran/Konfirmasi'
+import Contact from './pages/Contact'
 
 function App() {
   return (

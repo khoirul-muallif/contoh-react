@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import usePendaftaran from '../../context/usePendaftaran'
-import dataDokter from '../../data/dokter.json'
+import { getDokter } from '../../services/api' // ← fix path
 import Button from '../../components/Button'
 
 const hariMap = {
@@ -13,74 +13,71 @@ const FormPendaftaran = () => {
   const navigate = useNavigate()
   const { dataPasien, setDataPendaftaran } = usePendaftaran()
 
+  const [dokterList, setDokterList] = useState([]) // ← simpan data dokter di state
   const [poliklinikId, setPoliklinikId] = useState('')
   const [dokterId, setDokterId] = useState('')
   const [tanggalPeriksa, setTanggalPeriksa] = useState('')
   const [keluhan, setKeluhan] = useState('')
 
-  // Ambil list poli unik dari data dokter
+  // ✅ Fetch dokter pakai useEffect
+  useEffect(() => {
+    getDokter().then(res => setDokterList(res.data))
+  }, [])
+
+  // ✅ Computed dari state, bukan dari fungsi async
   const poliList = [...new Map(
-    dataDokter.map(d => [d.poliklinik.id, d.poliklinik])
+    dokterList.map(d => [d.poliklinik.id, d.poliklinik])
   ).values()]
 
-  // Filter dokter berdasarkan poli yang dipilih
-  const dokterByPoli = dataDokter.filter(
+  const dokterByPoli = dokterList.filter(
     d => d.poliklinik.id === parseInt(poliklinikId)
   )
 
-  // Dokter yang dipilih
-  const dokterDipilih = dataDokter.find(d => d.id === parseInt(dokterId))
+  const dokterDipilih = dokterList.find(d => d.id === parseInt(dokterId))
 
-  // Tanggal yang tersedia berdasarkan jadwal dokter
+  // Reset handler
+  const handlePoliChange = (e) => {
+    setPoliklinikId(e.target.value)
+    setDokterId('')
+    setTanggalPeriksa('')
+  }
+
+  const handleDokterChange = (e) => {
+    setDokterId(e.target.value)
+    setTanggalPeriksa('')
+  }
+
+  // Tanggal tersedia dari jadwal dokter
   const tanggalTersedia = () => {
     if (!dokterDipilih) return []
-
     const hariJadwal = dokterDipilih.jadwal.map(j => j.hari)
     const hasil = []
     const today = new Date()
-
-    // Generate 30 hari ke depan yang cocok dengan hari jadwal
     for (let i = 0; i <= 30; i++) {
       const tgl = new Date(today)
       tgl.setDate(today.getDate() + i)
       const namaHari = hariMap[tgl.toLocaleDateString('en-US', { weekday: 'long' })]
-
       if (hariJadwal.includes(namaHari)) {
-        hasil.push(tgl.toISOString().split('T')[0]) // format YYYY-MM-DD
+        hasil.push(tgl.toISOString().split('T')[0])
       }
     }
     return hasil
   }
 
-  // Reset dokter & tanggal saat poli berubah
-  const handlePoliChange = (e) => {
-    setPoliklinikId(e.target.value)
-    setDokterId('')         // reset dokter saat poli berubah
-    setTanggalPeriksa('')   // reset tanggal saat poli berubah
-    }
-
-    const handleDokterChange = (e) => {
-    setDokterId(e.target.value)
-    setTanggalPeriksa('')   // reset tanggal saat dokter berubah
-    }
-
-  // Guard — kalau belum ada data pasien, redirect balik
+  // Guard
   useEffect(() => {
     if (!dataPasien) navigate('/pendaftaran')
-    }, [dataPasien, navigate])
+  }, [dataPasien, navigate])
 
   const handleSubmit = (e) => {
     e.preventDefault()
-
     const poli = poliList.find(p => p.id === parseInt(poliklinikId))
-
     setDataPendaftaran({
       poliklinik: poli,
       dokter: dokterDipilih || null,
       tanggal_periksa: tanggalPeriksa,
       keluhan,
     })
-
     navigate('/pendaftaran/konfirmasi')
   }
 

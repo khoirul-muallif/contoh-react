@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import Card from '../components/Card'
-import dataPengumuman from '../data/pengumuman.json'
+import { getPengumuman } from '../services/api'
 
 const formatTanggal = (tanggal) => {
   return new Date(tanggal).toLocaleDateString('id-ID', {
@@ -15,7 +15,7 @@ const Pengumuman = () => {
   useEffect(() => {
     // Nanti diganti: axios.get('/api/pengumuman')
     setTimeout(() => {
-      setPengumuman(dataPengumuman)
+      getPengumuman().then(res => setPengumuman(res.data))
       setLoading(false)
     }, 500)
   }, [])

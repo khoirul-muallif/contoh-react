@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { FaUserMd, FaHospital, FaClock, FaCalendarAlt } from 'react-icons/fa'
-import dataDokter from '../data/dokter.json'
+import { getDokterById } from '../services/api'
 
 const hariUrutan = ['Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu', 'Minggu']
 
@@ -11,13 +11,17 @@ const DokterDetail = () => {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    // Nanti diganti: axios.get(`/api/dokter/${id}`)
-    setTimeout(() => {
-      const found = dataDokter.find((d) => d.id === parseInt(id))
-      setDokter(found || null)
-      setLoading(false)
-    }, 500)
+    getDokterById(id)
+      .then(res => {
+        setDokter(res.data)
+        setLoading(false)
+      })
+      .catch(() => {
+        setDokter(null)
+        setLoading(false)
+      })
   }, [id])
+
 
   if (loading) return (
     <div className="flex justify-center items-center min-h-screen">

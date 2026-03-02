@@ -1,25 +1,28 @@
 import { useState, useEffect } from 'react'
 import { useParams, Link } from 'react-router-dom'
-import dataPengumuman from '../data/pengumuman.json'
+import { getPengumumanBySlug } from '../services/api'
 
-const formatTanggal = (tanggal) => {
-  return new Date(tanggal).toLocaleDateString('id-ID', {
+const formatTanggal = (tanggal) =>
+  new Date(tanggal).toLocaleDateString('id-ID', {
     day: 'numeric', month: 'long', year: 'numeric',
   })
-}
 
 const PengumumanDetail = () => {
   const { id } = useParams()
   const [item, setItem] = useState(null)
   const [loading, setLoading] = useState(true)
+  const [error, setError] = useState(null)
 
   useEffect(() => {
-    // Nanti diganti: axios.get(`/api/pengumuman/${id}`)
-    setTimeout(() => {
-      const found = dataPengumuman.find((p) => p.slug === id)
-      setItem(found || null)
-      setLoading(false)
-    }, 500)
+    getPengumumanBySlug(id)
+      .then(data => {
+        setItem(data || null)
+        setLoading(false)
+      })
+      .catch(() => {
+        setError('Gagal memuat data.')
+        setLoading(false)
+      })
   }, [id])
 
   if (loading) return (
@@ -28,20 +31,23 @@ const PengumumanDetail = () => {
     </div>
   )
 
+  if (error) return (
+    <div className="flex flex-col items-center justify-center min-h-screen gap-4">
+      <p className="text-red-500">❌ {error}</p>
+      <Link to="/pengumuman" className="text-blue-600 hover:underline">← Kembali</Link>
+    </div>
+  )
+
   if (!item) return (
     <div className="flex flex-col items-center justify-center min-h-screen gap-4">
       <p className="text-5xl">😕</p>
       <p className="text-gray-400 text-xl">Pengumuman tidak ditemukan</p>
-      <Link to="/pengumuman" className="text-blue-600 hover:underline">
-        ← Kembali ke Pengumuman
-      </Link>
+      <Link to="/pengumuman" className="text-blue-600 hover:underline">← Kembali</Link>
     </div>
   )
 
   return (
     <div className="max-w-3xl mx-auto px-6 py-12">
-
-      {/* Breadcrumb */}
       <div className="text-sm text-gray-400 mb-6 flex items-center gap-1">
         <Link to="/" className="hover:text-blue-600">Beranda</Link>
         <span>›</span>
@@ -49,43 +55,19 @@ const PengumumanDetail = () => {
         <span>›</span>
         <span className="text-gray-600 line-clamp-1">{item.judul}</span>
       </div>
-
-      {/* Badge + Penting */}
       <div className="flex items-center gap-3 mb-4">
-        <span className="bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full">
-          {item.kategori}
-        </span>
-        {item.penting && (
-          <span className="bg-red-100 text-red-600 text-xs font-semibold px-3 py-1 rounded-full">
-            🔴 Penting
-          </span>
-        )}
+        <span className="bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full">{item.kategori}</span>
+        {item.penting && <span className="bg-red-100 text-red-600 text-xs font-semibold px-3 py-1 rounded-full">🔴 Penting</span>}
       </div>
-
-      {/* Judul */}
       <h1 className="text-3xl font-bold text-gray-800 mb-3">{item.judul}</h1>
-
-      {/* Tanggal */}
       <p className="text-sm text-gray-400 mb-8">📅 {formatTanggal(item.tanggal)}</p>
-
       <div className="w-full h-px bg-gray-200 mb-8"></div>
-
-      {/* Isi konten HTML dari database */}
-      <div
-        className="prose prose-blue max-w-none"
-        dangerouslySetInnerHTML={{ __html: item.isi }}
-      />
-
-      {/* Tombol Kembali */}
+      <div className="prose prose-blue max-w-none" dangerouslySetInnerHTML={{ __html: item.isi }} />
       <div className="mt-12 pt-6 border-t border-gray-200">
-        <Link
-          to="/pengumuman"
-          className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg transition"
-        >
+        <Link to="/pengumuman" className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg transition">
           ← Kembali ke Pengumuman
         </Link>
       </div>
-
     </div>
   )
 }

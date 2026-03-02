@@ -1,0 +1,177 @@
+{
+  "pengumuman": [
+    {
+      "id": 1,
+      "slug": "jadwal-libur-lebaran-2025",
+      "judul": "Jadwal Libur Lebaran 2025",
+      "kategori": "Operasional",
+      "tanggal": "2025-03-20",
+      "ringkasan": "Informasi jadwal operasional rumah sakit selama libur Lebaran 2025.",
+      "isi": "<p>Dalam rangka Hari Raya Idul Fitri 1446 H, <strong>RS Sehat Sejahtera</strong> akan menyesuaikan jadwal operasional.</p><p>Poli Umum dan Poli Spesialis akan <strong>libur pada tanggal 31 Maret - 4 April 2025</strong>. Namun layanan IGD tetap buka 24 jam.</p>",
+      "penting": true
+    },
+    {
+      "id": 2,
+      "slug": "sistem-antrian-online-baru",
+      "judul": "Sistem Antrian Online Baru",
+      "kategori": "Layanan",
+      "tanggal": "2025-03-15",
+      "ringkasan": "RS Sehat Sejahtera meluncurkan sistem antrian online yang lebih mudah dan cepat.",
+      "isi": "<p>Kami dengan bangga memperkenalkan <strong>sistem antrian online terbaru</strong>. Pasien kini dapat mendaftar antrian dari rumah melalui website atau aplikasi kami.</p>",
+      "penting": true
+    },
+    {
+      "id": 3,
+      "slug": "pembukaan-poli-gizi",
+      "judul": "Pembukaan Poli Gizi Klinik",
+      "kategori": "Layanan Baru",
+      "tanggal": "2025-03-10",
+      "ringkasan": "RS Sehat Sejahtera membuka layanan Poli Gizi Klinik untuk konsultasi nutrisi.",
+      "isi": "<p>Kami membuka layanan baru yaitu <strong>Poli Gizi Klinik</strong>. Jadwal pelayanan setiap <strong>Senin, Rabu, dan Jumat pukul 09.00 - 13.00 WIB</strong>.</p>",
+      "penting": false
+    },
+    {
+      "id": 4,
+      "slug": "maintenance-lift-gedung-b",
+      "judul": "Maintenance Lift Gedung B",
+      "kategori": "Fasilitas",
+      "tanggal": "2025-03-05",
+      "ringkasan": "Pemberitahuan maintenance lift Gedung B selama 2 hari.",
+      "isi": "<p><strong>Lift Gedung B</strong> akan dilakukan maintenance pada tanggal <strong>8-9 Maret 2025</strong>. Gunakan tangga atau lift Gedung A.</p>",
+      "penting": false
+    }
+  ],
+  "faq": [
+    {
+      "id": 1,
+      "kategori": "Pendaftaran",
+      "pertanyaan": "Bagaimana cara mendaftar sebagai pasien baru?",
+      "jawaban": "Anda dapat mendaftar melalui website ini dengan mengklik menu Pendaftaran Online, mengisi formulir dengan data diri yang lengkap, lalu memilih dokter dan jadwal yang diinginkan."
+    },
+    {
+      "id": 2,
+      "kategori": "Pendaftaran",
+      "pertanyaan": "Apakah bisa mendaftar untuk orang lain?",
+      "jawaban": "Ya, Anda bisa mendaftarkan anggota keluarga atau orang lain. Pastikan data yang diisi adalah data pasien yang akan berobat."
+    },
+    {
+      "id": 3,
+      "kategori": "Layanan",
+      "pertanyaan": "Apa saja poli spesialis yang tersedia?",
+      "jawaban": "RS Sehat Sejahtera memiliki berbagai poli spesialis antara lain: Penyakit Dalam, Bedah, Kandungan, Anak, THT, Saraf, Mata, Kesehatan Jiwa, Gigi, Gizi, dan Kecantikan."
+    },
+    {
+      "id": 4,
+      "kategori": "Layanan",
+      "pertanyaan": "Apakah IGD buka 24 jam?",
+      "jawaban": "Ya, layanan IGD kami buka 24 jam sehari, 7 hari seminggu termasuk hari libur nasional."
+    },
+    {
+      "id": 5,
+      "kategori": "Pembayaran",
+      "pertanyaan": "Metode pembayaran apa saja yang diterima?",
+      "jawaban": "Kami menerima pembayaran tunai, kartu debit/kredit, transfer bank, GoPay, OVO, Dana, dan BPJS Kesehatan."
+    },
+    {
+      "id": 6,
+      "kategori": "Pembayaran",
+      "pertanyaan": "Apakah menerima BPJS Kesehatan?",
+      "jawaban": "Ya, kami menerima pasien BPJS Kesehatan. Pastikan membawa kartu BPJS yang masih aktif dan surat rujukan jika diperlukan."
+    }
+  ],
+  "blog": [
+    {
+      "id": 53,
+      "category": "Kesehatan",
+      "title": "Kesehatan Lutut: Cara Menjaga dan Mencegah Cedera",
+      "slug": "kesehatan-lutut-cara-menjaga-dan-mencegah-cedera",
+      "image": "https://placehold.co/800x400?text=Kesehatan+Lutut",
+      "excerpt": "Lutut adalah salah satu sendi terpenting dalam tubuh yang rentan terhadap cedera.",
+      "body": "<p>Lutut adalah salah satu sendi terpenting dalam tubuh. <strong>Penyebab Umum Masalah Lutut</strong> antara lain cedera, penuaan, dan berat badan berlebih.</p>",
+      "author": "dr. Admin",
+      "published_at": "2025-08-08"
+    },
+    {
+      "id": 54,
+      "category": "Tips Sehat",
+      "title": "10 Cara Menjaga Imunitas Tubuh di Musim Hujan",
+      "slug": "10-cara-menjaga-imunitas-tubuh-di-musim-hujan",
+      "image": "https://placehold.co/800x400?text=Imunitas+Tubuh",
+      "excerpt": "Musim hujan seringkali membawa berbagai penyakit. Berikut cara menjaga daya tahan tubuh.",
+      "body": "<p>Musim hujan seringkali membawa berbagai penyakit. Konsumsi vitamin C, istirahat cukup, dan olahraga rutin sangat membantu.</p>",
+      "author": "dr. Sari",
+      "published_at": "2025-08-10"
+    },
+    {
+      "id": 55,
+      "category": "Informasi",
+      "title": "Mengenal Layanan Hemodialisa di RS Sehat Sejahtera",
+      "slug": "mengenal-layanan-hemodialisa-di-rs-sehat-sejahtera",
+      "image": "https://placehold.co/800x400?text=Hemodialisa",
+      "excerpt": "Layanan hemodialisa hadir untuk membantu pasien dengan gangguan fungsi ginjal.",
+      "body": "<p>Hemodialisa adalah prosedur medis untuk membersihkan darah dari racun ketika ginjal tidak berfungsi dengan baik.</p>",
+      "author": "dr. Budi Sp.PD",
+      "published_at": "2025-08-12"
+    }
+  ],
+  "dokter": [
+    {
+      "id": 1,
+      "kd_dokter": "101",
+      "nm_dokter": "dr. Budi Santoso, Sp.JP",
+      "jk": "L",
+      "image": "https://placehold.co/300x300?text=dr.Budi",
+      "status": 1,
+      "poliklinik": { "id": 1, "kd_poli": "JAN", "nm_poli": "Klinik Jantung" },
+      "spesialis": { "id": 1, "nm_sps": "Spesialis Jantung", "slug": "spesialis-jantung" },
+      "jadwal": [
+        { "id": 1, "hari": "Senin", "jam_mulai": "08:00", "jam_selesai": "14:00", "keterangan": "Praktek" },
+        { "id": 2, "hari": "Rabu", "jam_mulai": "08:00", "jam_selesai": "14:00", "keterangan": "Praktek" },
+        { "id": 3, "hari": "Jumat", "jam_mulai": "08:00", "jam_selesai": "12:00", "keterangan": "Praktek" }
+      ]
+    },
+    {
+      "id": 2,
+      "kd_dokter": "102",
+      "nm_dokter": "dr. Sri Wahyuni, Sp.PD",
+      "jk": "P",
+      "image": "https://placehold.co/300x300?text=dr.Sri",
+      "status": 1,
+      "poliklinik": { "id": 2, "kd_poli": "PDL", "nm_poli": "Klinik Penyakit Dalam" },
+      "spesialis": { "id": 2, "nm_sps": "Spesialis Penyakit Dalam", "slug": "spesialis-penyakit-dalam" },
+      "jadwal": [
+        { "id": 4, "hari": "Selasa", "jam_mulai": "09:00", "jam_selesai": "15:00", "keterangan": "Praktek" },
+        { "id": 5, "hari": "Kamis", "jam_mulai": "09:00", "jam_selesai": "15:00", "keterangan": "Praktek" }
+      ]
+    },
+    {
+      "id": 3,
+      "kd_dokter": "103",
+      "nm_dokter": "dr. Ahmad Fauzi, Sp.A",
+      "jk": "L",
+      "image": "https://placehold.co/300x300?text=dr.Ahmad",
+      "status": 1,
+      "poliklinik": { "id": 4, "kd_poli": "ANA", "nm_poli": "Klinik Anak" },
+      "spesialis": { "id": 3, "nm_sps": "Spesialis Anak", "slug": "spesialis-anak" },
+      "jadwal": [
+        { "id": 7, "hari": "Senin", "jam_mulai": "10:00", "jam_selesai": "14:00", "keterangan": "Praktek" },
+        { "id": 8, "hari": "Sabtu", "jam_mulai": "08:00", "jam_selesai": "12:00", "keterangan": "Praktek" }
+      ]
+    }
+  ],
+  "pasien": [
+    {
+      "id": 1,
+      "nik": "3374010101900001",
+      "no_rekam_medik": "RM0001",
+      "nama": "Budi Santoso",
+      "alamat": "Jl. Merdeka No. 10, Semarang",
+      "jenis_kelamin": "L",
+      "no_telepon": "081234567890",
+      "tanggal_lahir": "1990-01-01",
+      "tipe_pasien": "bpjs",
+      "no_bpjs": "0001234567890"
+    }
+  ],
+  "pendaftaran": []
+}

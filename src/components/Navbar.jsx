@@ -18,6 +18,7 @@ const Navbar = () => {
     { label: 'Blog', path: '/blog' },
     { label: 'Pengumuman', path: '/pengumuman' },
     { label: 'FAQ', path: '/faq' },
+    { label: 'Kontak', path: '/contact' }
   ]
 
   return (
